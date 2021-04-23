@@ -1,4 +1,4 @@
-// 인서트 PNG 저장 스크립트 by AJ (ver.2021.02.15)
+﻿// 인서트 PNG 저장 스크립트 by AJ (ver.2021.02.15)
 try {
 
     executeAction(app.stringIDToTypeID('save'), undefined, DialogModes.NO);
