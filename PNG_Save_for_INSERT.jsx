@@ -7,6 +7,7 @@ try {
     var ingDocName = ingDoc.name.substring(0, ingDoc.name.lastIndexOf("."));
     var ingDocNameHyphen = ingDocName.replace(/ /g,"-");
     var ingDocPath = ingDoc.path;
+    var selFolder = Folder(ingDoc.path);
     var allLayers = ingDoc.layers;
 
     var options = new ExportOptionsSaveForWeb();
