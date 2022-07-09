@@ -69,9 +69,6 @@ try {
 
         for(i = 0; i < selectedLayers.length; i++) {
             selectedLayers[i].visible = true;
-            if () {
-                
-            }
             var exportingFile = new File(ingDocPath + "/" + ingDocNameHyphen + "_" + (i + 1) + ".png");
             ingDoc.exportDocument(exportingFile, ExportType.SAVEFORWEB, options);
             exportingFile.rename(ingDocName + "_" + (i + 1) + ".png");

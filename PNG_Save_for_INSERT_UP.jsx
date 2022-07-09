@@ -1,4 +1,4 @@
-// 인서트 PNG 저장 스크립트 by AJ (ver.2021.02.15)
+﻿// 인서트 PNG 저장 스크립트 by AJ (ver.2022.07.09)
 try {
 
     executeAction(app.stringIDToTypeID('save'), undefined, DialogModes.NO);
@@ -69,9 +69,6 @@ try {
 
         for(i = 0; i < selectedLayers.length; i++) {
             selectedLayers[i].visible = true;
-            if () {
-                
-            }
             var exportingFile = new File(ingDocPath + "/" + ingDocNameHyphen + "_" + (i + 1) + ".png");
             ingDoc.exportDocument(exportingFile, ExportType.SAVEFORWEB, options);
             exportingFile.rename(ingDocName + "_" + (i + 1) + ".png");
@@ -87,5 +84,5 @@ try {
 
 
 } catch (e) {
-    alert("[Cache error] \n 최상위 레이어 or 그룹을 선택하고 다시 실행해주세요.");
+    alert("최상위 레이어 or 그룹을 선택하고 다시 실행해주세요.");
 }
